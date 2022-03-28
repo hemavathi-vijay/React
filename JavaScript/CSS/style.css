@@ -1,0 +1,339 @@
+* {
+  box-sizing: border-box;
+  border-color: none;
+}
+
+body {
+  /* background-image: url(https://source.unsplash.com/random); */
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.navBar {
+  /*position: -webkit-sticky;*/
+  background-color: rgb(115, 247, 247);
+  border-radius: 10px;
+  margin-bottom: 50px;
+  max-width: 100%;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+.navBar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  color: rgb(7, 7, 14);
+  font-size: large;
+}
+
+.navBar a:hover {
+  background-color: rgb(21, 240, 240);
+  color: rgb(112, 7, 7);
+}
+
+.title_fixed h1 {
+  background-image: linear-gradient(rgb(243, 176, 217), rgb(202, 119, 241));
+  border-radius: 7px;
+  border: 5px soild pink;
+  bottom: 0;
+  max-width: 400px;
+  padding: 5px 20px;
+  position: fixed;
+  right: 100px;
+  text-align: center;
+  z-index: 1;
+}
+/* Flexbox with 3 cards*/
+
+.card {
+  border-radius: 4px;
+  border: 1px solid black;
+  float: left;
+  margin: 20px;
+  max-width: 200px;
+  padding: 1px 10px;
+  text-align: center;
+}
+
+.card .text {
+  text-align: left;
+}
+
+.card image {
+  width: 100px;
+  height: 100px;
+  float: inline-start;
+}
+
+/* Creating a table*/
+.content_table {
+  border-collapse: collapse;
+  clear: both;
+  font-size: 0.9em;
+  margin: 25px 0;
+  min-width: 400px;
+  padding: 15px;
+}
+.content_table thead tr th {
+  background-color: rgb(115, 247, 247);
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.content_table tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+.content_table tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.content_table tbody tr td {
+  padding: 15px;
+}
+
+.content_table tbody tr:nth-child(even) {
+  background-color: rgb(199, 247, 247);
+}
+
+.content_table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.content_table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+.content_table tr:hover {
+  background-color: rgba(175, 175, 245, 0.7) !important;
+}
+
+.button {
+  background-color: rgb(146, 140, 140);
+  border-radius: 3px;
+  border: 0.5px solid black;
+  padding: 3px 8px;
+  text-align: center;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.dogs_table,
+.dogs_table tr,
+.dogs_table th,
+.dogs_table td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 5px 10px;
+  max-width: fit-content;
+  text-align: center;
+}
+/*------------------------------------------------------------------*/
+/* About me Page 
+Creating a header, a menu, a content and a footer*/
+
+.company_name,
+.footer {
+  background-color: grey;
+  color: white;
+  padding: 40px;
+}
+
+.menu ul {
+  list-style: none;
+  float: left;
+}
+.menu {
+  width: 25%;
+}
+
+.content {
+  padding-top: 20px;
+  content: "";
+  clear: both;
+  display: table;
+  height: 300px;
+}
+
+.content p {
+  width: 75%;
+  text-indent: 30px;
+  padding-top: 15px;
+}
+
+.content img {
+  border-radius: 10px;
+  float: right;
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-top: 10px;
+  max-height: 250px;
+  max-width: 250px;
+}
+
+/* Link menu */
+.menu li {
+  background-color: rgb(247, 216, 115);
+  margin: 5px 30px;
+  padding: 5px 50px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.menu li:hover {
+  background-color: rgb(204, 158, 7);
+  cursor: pointer;
+}
+/*------------------------------------------------------------------*/
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* End of About me Page */
+
+/*----------------------------- Start of Navigation Dropdown-------------------------------------------*/
+/*
+.drop_button {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.navBar_dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar_dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+  visibility: hidden;
+  display: none;
+}
+
+.navbar_dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar_dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.navBar_dropdown:hover,
+.navBar_dropdown:focus-within .navbar_dropdown-content {
+  visibility: visible;
+  display: block;
+}
+
+.navBar_dropdown:hover .drop_button {
+  background-color: #3e8e41;
+}
+
+*/
+
+.drop_button {
+  background-color: rgb(115, 247, 247);
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.navBar_dropdown {
+  position: relative;
+  display: inline-block;
+}
+.navbar_dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 145px;
+  z-index: 1;
+}
+.drop_button:hover {
+  background-color: rgb(25, 241, 241);
+}
+
+.navbar_dropdown-content a {
+  display: block;
+  background-color: rgb(115, 247, 247);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 2px;
+  text-decoration: none;
+}
+
+.navBar_dropdown:hover .navbar_dropdown-content {
+  display: block;
+}
+
+.navbar_dropdown-content a:hover {
+  background-color: rgb(25, 241, 241);
+  text-transform: uppercase;
+}
+
+/*----------------------------- End of Navigation dropdown -------------------------------------------*/
+
+.planet_p {
+  text-align: center;
+  padding: 10px;
+}
+
+.planets_table {
+  border: 2px solid rgb(190, 190, 190);
+}
+
+.planets_table,
+table,
+tr,
+th,
+td {
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  overflow-wrap: normal;
+  padding: 10px 20px;
+  text-align: center;
+}
+.planets_table th,
+.planets_table td {
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.planets_table th {
+  background-color: rgb(235, 235, 235);
+}
+
+.planets_table tr:nth-child(even) td {
+  background-color: rgb(250, 250, 250);
+}
+
+.planets_table tr:nth-child(odd) td {
+  background-color: rgb(245, 245, 245);
+}
+
+@media (max-width: 600) {
+  .navBar {
+    position: relative;
+    display: inline-block;
+  }
+}
+
+/* ---------Icons------------------------------*/
+
+/*------------End of Icons---------------------*/

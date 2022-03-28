@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- My first HTML comment. learn to comment every code snippet-->
+    <link rel="stylesheet" href="/JavaScript/CSS/style.css" />
+    <link rel="stylesheet" href="/JavaScript/CSS/normalize.css" />
+    <link rel="javaScript" href="index.js" />
+    <title>JS-Basics</title>
+  </head>
+  <body>
+    <div class="title_fixed">
+      <h1>Java Script Codes</h1>
+    </div>
+    <div class="navBar">
+      <a href="#">Home</a>
+      <a href="/JavaScript/aboutUs.html">About Us</a>
+      <a href="/JavaScript/contact.html">Contact</a>
+      <a href="/JavaScript/planets_data.html">Planets</a>
+      <a href="/JavaScript/gallery.html">Gallery</a>
+    </div>
+
+    <!--<img src="https://source.unsplash.com/random" alt="Some random image" /> -->
+    <p>I love to see the changes</p>
+    <hr />
+    <div>
+      <div class="card" id="hide_me">
+        <h5>Coffee Berries</h5>
+        <img src="./Image/coffee-berries.jpg" alt="coffee-berries" />
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
+        <p
+          class="button"
+          onclick="document.getElementById('hide_me').style.visibility='hidden'"
+        >
+          Hide Me
+        </p>
+      </div>
+
+      <div class="card" id="remove_me">
+        <h5>Coffee Beans</h5>
+        <img src="./Image/roasted-beans.jpg" alt="coffee-beans" />
+        <p
+          class="button"
+          onclick="document.getElementById('remove_me').style.display='none'"
+        >
+          Remove Me
+        </p>
+      </div>
+
+      <div class="card" id="restore_me">
+        <h5>Coffee Cup</h5>
+        <img src="./Image/coffee-cup.png" alt="coffee-cup" />
+        <p
+          class="button"
+          onclick="document.getElementById('remove_me').style.display='block'; document.getElementById('hide_me').style.visibility='visible' "
+        >
+          Restore All
+        </p>
+      </div>
+    </div>
+
+    <!-- Learning Tables-->
+    <table class="content_table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Flavour</th>
+          <th>Age</th>
+          <th>color</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Swetha</td>
+          <td>bubblegum</td>
+          <td>blue</td>
+          <td>blue</td>
+        </tr>
+        <tr>
+          <td>Suriya</td>
+          <td>Mango</td>
+          <td>5</td>
+          <td>Pink</td>
+        </tr>
+        <tr>
+          <td>Vijay</td>
+          <td>Pista</td>
+          <td>40</td>
+          <td>blue</td>
+        </tr>
+        <tr>
+          <td>Swetha</td>
+          <td>bubblegum</td>
+          <td>blue</td>
+          <td>blue</td>
+        </tr>
+        <tr>
+          <td>Suriya</td>
+          <td>Mango</td>
+          <td>5</td>
+          <td>Pink</td>
+        </tr>
+        <tr>
+          <td>Vijay</td>
+          <td>Pista</td>
+          <td>40</td>
+          <td>blue</td>
+        </tr>
+        <tr>
+          <td>Adhika</td>
+          <td>Strawberry</td>
+          <td>13</td>
+          <td>violet</td>
+        </tr>
+        <tr>
+          <td>Akshaya</td>
+          <td>Chocolate</td>
+          <td>10</td>
+          <td>pink</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eius
+      reprehenderit quas earum accusamus maiores similique optio, dolore a
+      debitis. Cumque porro vel aspernatur reiciendis iusto magnam iste,
+      inventore maxime cupiditate consectetur eveniet aliquam aperiam, magni
+      vitae labore natus voluptate.
+    </p>
+
+    <table class="dogs_table">
+      <thead>
+        <tr>
+          <th style="margin-bottom: 0"></th>
+          <th>Knocky</th>
+          <th>Flor</th>
+          <th>Ella</th>
+          <th>Juan</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th style="margin-top: 0">Breed</th>
+          <td>Jack Russel</td>
+          <td>Poodle</td>
+          <td>Streetdog</td>
+          <td>Cocker Spaniel</td>
+        </tr>
+
+        <tr>
+          <th>Age</th>
+          <td>16</td>
+          <td>9</td>
+          <td>10</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <th>Owner</th>
+          <td>Mother-in-law</td>
+          <td colspan="2">Mine</td>
+
+          <td>kids</td>
+        </tr>
+        <tr>
+          <th>Easting Habits</th>
+          <td>Eats everyone's leftovers</td>
+          <td>Nibbles at food</td>
+          <td>Hearty eater</td>
+          <td>Will eat till he explodes</td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="index.js"></script>
+  </body>
+</html>
